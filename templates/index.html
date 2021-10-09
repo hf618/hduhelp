@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index_page</title>
+</head>
+<body>
+	<!--整体居中-->
+    <div  style="text-align:center">
+    <h1>User Login</h1>
+    <!--jinja2的函数-->
+    {% if message %} {{message}} {% endif %}
+    <!--将登陆信息放到一个form中-->
+    <form method="POST">
+        <input type="text" name="username" placeholder="username" />
+        <br/>
+        <input type="password" name="password" placeholder="password" />
+        <br/>
+        <input type="submit" value="submit" />
+        <input type="reset" value="reset" />
+        <!--跳转到register的页面-->
+        <a href="{{ url_for('register') }}">注册</a>
+    </form>
+    </div>
+</body>
+</html>

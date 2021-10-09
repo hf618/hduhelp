@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register_page</title>
+</head>
+<body>
+    <div  style="text-align:center">
+    <h1>User Register</h1>
+        {% if message %} {{message}} {% endif %}
+    <form method="POST">
+        <input type="text" name="username" placeholder="input username" />
+        <br/>
+        <input type="password" name="password" placeholder="input password" />
+        <br/>
+        <input type="text" name="depart" placeholder="input depart" />
+        <br/>
+        <input type="text" name="photo" placeholder="input photo" />
+        <br/>
+        <input type="submit" value="submit" />
+        <input type="reset" value="reset" />
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game_page</title>
+</head>
+<body>
+       <div  style="text-align:center">
+    <h1>Find the matched person</h1>
+    <form method="GET">
+<img src={{ nam }}+".jpg" alt={{ nam }} onerror="this.src={{ nam }}+".jpg";this.onerror=null"/><br/>
+
+
+            {% if n1 == nam %}
+            <a href="{{ url_for('judge_r') }}">{{ n1 }}</a><br/>
+            {% else %}
+            <a href="{{ url_for('judge_f') }}">{{ n1 }}</a><br/>
+            {% endif %}
+
+            {% if n2 == nam %}
+            <a href="{{ url_for('judge_r') }}">{{ n2 }}</a><br/>
+            {% else %}
+            <a href="{{ url_for('judge_f') }}">{{ n2 }}</a><br/>
+            {% endif %}
+
+            {% if n3 == nam %}
+             <a href="{{ url_for('judge_r') }}">{{ n3 }}</a><br/>
+            {% else %}
+             <a href="{{ url_for('judge_f') }}">{{ n3 }}</a><br/>
+            {% endif %}
+
+            {% if n4 == nam %}
+            <a href="{{ url_for('judge_r') }}">{{ n4 }}</a>
+            {% else %}
+            <a href="{{ url_for('judge_f') }}">{{ n4 }}</a>
+            {% endif %}
+
+    </form>
+    </div>
+</body>
+</html>
