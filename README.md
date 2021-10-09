@@ -11,4 +11,4 @@
 * 5.鼠标点击名字，网页跳转告知用户是否名字与图片匹配
 ### 使用效果：
 * 见文件photo
-![image](https://github.com/hf618/hduhelp/tree/main/photo_new)
+![image](https://github.com/hf618/hduhelp/blob/main/photo_new/1.png)
